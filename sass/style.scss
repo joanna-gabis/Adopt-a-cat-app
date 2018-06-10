@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.main-header-container {
+  //background-color: #5AB1BB;
+  background-color: #709FB0;
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .main-header {
+    font-family: 'Acme', sans-serif;
+    font-size: 5rem;
+    color: #FFF;
+    text-align: center;
+    width: 50%;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  input[type=text] {
+    width: 30vw;
+    height: 30px;
+    border: 1px solid #4E6766;
+    margin: 10px 25px 10px 5px;
+
+    &:focus {
+      //border: 1px solid #F7DD72;
+      border: 1px solid #F4E8C1;
+    }
+    &::placeholder {
+      text-align: center;
+      font-size: 0.75rem;
+    }
+  }
+
+  .checkbox {
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .checkboxBox {
+      width: 15px;
+      height: 15px;
+      border: 1px solid #4E6766;
+      display: inline-block;
+      margin: 0 5px 0 5px;
+    }
+    img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .checkboxDesc {
+      display: inline-block;
+      font-size: 0.75rem;
+    }
+  }
+
+}
+
+.table {
+  width: 80vw;
+  margin-top: 20px;
+  padding: 5px;
+  border-spacing: 0;
+
+  .table-header {
+    background-color: #709FB0;
+    line-height: 2rem;
+    color: #FFF;
+
+    .align-left {
+      text-align: left;
+    }
+  }
+
+  .catPic {
+    height: 30px;
+  }
+
+  .tooltip {
+    img {
+      width: 13px;
+      height: 13px;
+      margin-top: 3px;
+      position: relative;
+    }
+
+    &:hover::after {
+      background: #333;
+      background: rgba(0,0,0,.8);
+      color: #FFF;
+      font-size: .8rem;
+      display: inline-block;
+      position: absolute;
+      margin: 0 0 2px 5px;
+      border-radius: 5px;
+      padding: 5px 15px;
+      z-index: 98;
+      content: 'Not suitable for families with kids';
+    }
+  }
+
+  .category {
+    background-color: #F4E8C1;
+    color: #000;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.5rem;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .table-row:first-child {
+    background-color: #f4f5f7;
+  }
+  .table-row:nth-child(odd) {
+    background-color: #f4f5f7;
+  }
+}
