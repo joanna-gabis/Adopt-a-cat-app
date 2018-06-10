@@ -1,3 +1,3 @@
-## Cat Shelter App
+Dog adoption app
 
 
