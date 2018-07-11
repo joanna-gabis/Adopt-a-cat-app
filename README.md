@@ -5,3 +5,10 @@ Presents data in a table and allows user to filter through it. For now the data 
 To run the app type go the main folder and type in terminal: node_modules/.bin/webpack and then open index.html
 
 
+![view](/screenshots/1.png?raw=true "view")
+
+Filtered
+
+![filter](/screenshots/2.png?raw=true "filter")
+
+
